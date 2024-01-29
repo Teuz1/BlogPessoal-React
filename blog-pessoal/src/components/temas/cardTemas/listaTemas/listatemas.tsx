@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
-import Tema from '../../../models/Tema';
+import Tema from '../../../models/tema';
 import { buscar } from '../../../services/Service';
-import CardTemas from '../cardTemas/CardTemas';
+import CardTemas from '../cardTemas/cardTemas';
 
 function ListaTemas() {
   const [temas, setTemas] = useState<Tema[]>([]);
